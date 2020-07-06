@@ -74,6 +74,10 @@ h1,h2,h3, h4 {
   text-transform:uppercase;
 }
 
+h1 span {
+display: block;
+}
+
 .header-footer {
  outline:1px solid green;
  
@@ -86,7 +90,11 @@ h1,h2,h3, h4 {
   border-radius:50px;
 }
 
-.google {
+.header-btn:nth-child(2) {
+margin-top:14px;
+}
+
+.icon-google {
  display:box;
  fill:#fff;
  outline:1px solid grey;
@@ -100,90 +108,165 @@ h1,h2,h3, h4 {
   text-align: left;
 }
 
-@media (max-width:640px) {
-  .header {
+/*Оптимальная загрузка шапки*/
+@media (max-width:1023px) {
+   .header {
     background-image: url("../images/football_767.jpg");
   }
+}
+
+@media (min-width:1024px) and (max-width:1600px)  {
+   .header {
+    background-image: url("../images/football_1280.jpg");
+  }
+}
+
+@media (min-width:1601px) {
+   .header {
+    background-image: url("../images/football_1920.jpg");
+  }
+}
+
+/* Стили по заданию */
+@media (max-width:640px) {
+ 
   .container {
-  	width:87.5%;
+  	width:280px;
+    padding-top:33px;
+    padding-bottom: 84px;
   }
   .logo {
-  	width:47.14%;
-  	padding-top:3.3rem;
+  	width:132px;
   }
   .header-title {
-  	margin-top:13.6rem;
-  	font-size: 2.8rem;
+  	margin-top:136px;
+  	font-size: 28px;
   }
 
-  .titles:nth-child(2) {
-    margin-left:13.75%;
+  h1 span {
+    margin-left:44px;
 }
   .header-footer {
-    margin-top:9rem;
-    padding-bottom: 8.4rem;
+    margin-top:90px;
   }
 
 .header-btn {
-  padding-top:1rem;
-  padding-bottom:1rem;
-  padding-left:25.6%;
-  width:100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:82px;
+  
  }
 
-.google {
- width:1.9rem;
+.icon-google {
+ width:19px;
  }
 
 .google_text {
-  font-size:0.8rem;
-  padding-left:0.9rem;
+  font-size:8px;
+  margin-left:9px;
  }
 }
 
 @media (min-width:641px) and (max-width:960px) {
-  .header {
-    background-image: url("../images/football_767.jpg");
-  }
+  
   .container {
-  	width:97.78%;
-  	padding-left:1.11%;
-  	padding-right:1.11%;
+  	width:750px;
+  	padding-left:23px;
+  	padding-right:24px;
+    padding-top:40px;
+    padding-bottom: 91px;
   }
   .logo {
-  	width:26.47%;
-  	padding-top:4rem;
+  	width:203px;
   }
   
   .header-title {
-  	margin-top:18.1rem;
-  	font-size: 6.4rem;
-  	padding-left:7.73%;
+  	margin-top:181px;
+  	font-size:  64px;
+  	padding-left:80px;
   }
 
-  .titles:nth-child(2) {
-    margin-left:22.13%;
+  h1 span {
+    margin-left:108px;
 }
   .header-footer {
-    margin-top:31.3rem;
-    padding-bottom: 9.1rem;
+    margin-top:313px;
     display:flex;
     justify-content:center;
+    align-items: baseline;
   }
 
 .header-btn {
-  padding-top:2.6rem;
-  padding-bottom:2.5rem;
-  padding-left:5.47%;
-  width:41.47%;
+  padding-top:25px;
+  padding-bottom:25px;
+  padding-left:41px;
+  width:311px;
+  box-sizing: border-box;
+  outline:1px solid red;
  }
 
-.google {
- width:5.6rem;
+.header-btn:nth-child(2) {
+margin-left:30px;
+}
+ 
+ .icon-google {
+ width:36px;
  }
 
 .google_text {
-  font-size:1.4rem;
-  padding-left:3.6rem;
+  font-size:14px;
+  margin-left:27px;
+ }
+}
+
+@media (min-width:961px) and (max-width:1920px) {
+  
+  .container {
+    width:1560px;
+    padding-left:11.75px;
+    padding-right:14.81px;
+    padding-top:44px;
+    padding-bottom: 110px;
+  }
+  .logo {
+    width:190px;
+  }
+  
+  .header-title {
+    margin-top:296px;
+    font-size:  90px;
+    padding-left:0;
+  }
+
+  h1 span {
+    margin-left:450px;
+}
+  .header-footer {
+    margin-top:223px;
+    display:flex;
+    justify-content:center;
+    align-items: baseline;
+  }
+
+.header-btn {
+  padding-top:25px;
+  padding-bottom:24px;
+  padding-left:39px;
+  width:311px;
+  box-sizing: border-box;
+  outline:1px solid red;
+ }
+
+.header-btn:nth-child(2) {
+margin-left:50px;
+}
+ 
+ .icon-google {
+ width:40px;
+ }
+
+.google_text {
+  font-size:14px;
+  margin-left:25px;
  }
 }
