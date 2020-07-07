@@ -2,7 +2,6 @@
 
 body {
 	margin: 0;
-	font-size:10px;
 }
 
 h1,h2,h3, h4 {
@@ -90,10 +89,6 @@ display: block;
   border-radius:50px;
 }
 
-.header-btn:nth-child(2) {
-margin-top:14px;
-}
-
 .icon-google {
  display:box;
  fill:#fff;
@@ -131,20 +126,20 @@ margin-top:14px;
 @media (max-width:640px) {
  
   .container {
-  	width:280px;
+  	width:87.5%;
     padding-top:33px;
     padding-bottom: 84px;
   }
   .logo {
-  	width:132px;
+    width:47.14%;
   }
   .header-title {
   	margin-top:136px;
-  	font-size: 28px;
+  	font-size: 1.75rem;
   }
 
   h1 span {
-    margin-left:44px;
+    margin-left:15.71%;
 }
   .header-footer {
     margin-top:90px;
@@ -153,41 +148,45 @@ margin-top:14px;
 .header-btn {
   padding-top:10px;
   padding-bottom:10px;
-  padding-left:82px;
-  
+  padding-left:29.28%;
  }
 
+.header-btn:nth-child(2) {
+margin-top:14px;
+}
+
 .icon-google {
- width:19px;
+ width:6.79%;
  }
 
 .google_text {
-  font-size:8px;
-  margin-left:9px;
+  font-size:.5rem;
+  margin-left:3.2%;
  }
 }
 
 @media (min-width:641px) and (max-width:960px) {
   
   .container {
-  	width:750px;
-  	padding-left:23px;
-  	padding-right:24px;
+  	box-sizing:border-box;
+    width:97.66%;
+  	padding-left:3%;
+  	padding-right:3%;
     padding-top:40px;
     padding-bottom: 91px;
   }
   .logo {
-  	width:203px;
+  	width:27%;
   }
   
   .header-title {
   	margin-top:181px;
-  	font-size:  64px;
-  	padding-left:80px;
+  	font-size:  4rem;
+  	padding-left:7.73%;
   }
 
   h1 span {
-    margin-left:108px;
+    margin-left:15%;
 }
   .header-footer {
     margin-top:313px;
@@ -199,47 +198,48 @@ margin-top:14px;
 .header-btn {
   padding-top:25px;
   padding-bottom:25px;
-  padding-left:41px;
-  width:311px;
+  padding-left:5.47%;
+  width:41.47%;
   box-sizing: border-box;
   outline:1px solid red;
  }
 
 .header-btn:nth-child(2) {
-margin-left:30px;
+margin-left:4%;
 }
  
  .icon-google {
- width:36px;
+ width:11.58%;
  }
 
 .google_text {
-  font-size:14px;
-  margin-left:27px;
+  font-size:.875rem;
+  margin-left:8.68%;
  }
 }
 
 @media (min-width:961px) and (max-width:1920px) {
   
   .container {
-    width:1560px;
-    padding-left:11.75px;
-    padding-right:14.81px;
+    box-sizing: border-box;
+    width:81.25%;
+    padding-left:.61%;
+    padding-right:.77%;
     padding-top:44px;
     padding-bottom: 110px;
   }
   .logo {
-    width:190px;
+    width:12.18%;
   }
   
   .header-title {
     margin-top:296px;
-    font-size:  90px;
+    font-size:  5.625rem;
     padding-left:0;
   }
 
   h1 span {
-    margin-left:450px;
+    margin-left:28.846%;
 }
   .header-footer {
     margin-top:223px;
@@ -251,22 +251,22 @@ margin-left:30px;
 .header-btn {
   padding-top:25px;
   padding-bottom:24px;
-  padding-left:39px;
-  width:311px;
+  padding-left:2.5%;
+  width:19.936%;
   box-sizing: border-box;
   outline:1px solid red;
  }
 
 .header-btn:nth-child(2) {
-margin-left:50px;
+margin-left:3.2%;
 }
  
  .icon-google {
- width:40px;
+ width:12.86%;
  }
 
 .google_text {
-  font-size:14px;
-  margin-left:25px;
+  font-size:0.875rem;
+  margin-left:8.039%;
  }
 }
