@@ -222,11 +222,11 @@ h1 span {
 }
 }
 
-/* @media (max-width:640px)    1  ============*/
+/* @media (max-width:640px) № 1  <header>  ============*/
 @media (max-width:640px) {
- 
 
-  
+
+
   .logo {
     width:47.14%;
   }
@@ -262,7 +262,7 @@ h1 span {
   margin-left:3.2%;
 }
 
-/* Блок athlets ====№ 1 ===== 2 секция =========================*/
+/* @media (max-width:640px) № 2 <athlets>  ============*/
 
 .athlets-title {
   font-size:3.125rem;
@@ -303,7 +303,7 @@ h1 span {
 
 }
 
-/* Блок players ====№ 1 ===== 3 секция =========================*/
+/* @media (max-width:640px) № 3 <players>  ============*/
 
 .players-title {
   font-size:3.125rem;
@@ -345,9 +345,9 @@ h1 span {
 }
 
 }
-/*  min-width:641px) and (max-width:960px   2  =======*/
+/*  min-width:641px) and (max-width:960px )  <header> =======*/
 @media (min-width:641px) and (max-width:960px) {
-  
+
   .container {
   	box-sizing:border-box;
     width:97.66%;
@@ -389,7 +389,7 @@ h1 span {
   .header-btn:nth-child(2) {
     margin-left:4%;
   }
-  
+
   .icon-google {
    width:11.58%;
  }
@@ -399,7 +399,8 @@ h1 span {
   margin-left:8.68%;
 }
 
-/* Блок athlets ===№ 2 ====== 2 секция =========================*/
+/*  min-width:641px) and (max-width:960px )  <athlets> =======*/
+
 .athlets {
   position:relative;
 }
@@ -425,7 +426,7 @@ h1 span {
   */
   padding:0;
   margin:0;
-  /*А вертикальные отступы все равно есть. Откуда они?*/
+  /*А вертикальные отступы все равно есть. Откуда они? */
 }
 
 
@@ -462,7 +463,8 @@ h1 span {
 
 }
 
-/* Блок players ===№ 2 ====== 3 секция =========================*/
+/*  min-width:641px) and (max-width:960px )  <players> =======*/
+
 .players {
   position:relative;
 }
@@ -521,9 +523,9 @@ h1 span {
 
 
 }
-/* (min-width:961px) and (max-width:1920px)   3    ================*/
+/* (min-width:961px) and (max-width:1920px)   <header> ================*/
 @media (min-width:961px) and (max-width:1920px) {
-  
+
   .container {
     box-sizing: border-box;
     width:81.25%;
@@ -564,7 +566,7 @@ h1 span {
   .header-btn:nth-child(2) {
     margin-left:3.2%;
   }
-  
+
   .icon-google {
    width:12.86%;
  }
@@ -574,7 +576,8 @@ h1 span {
   margin-left:8.039%;
 }
 
-/* Блок athlets ====№ 3 ===== 2 секция =========================*/
+/* (min-width:961px) and (max-width:1920px)   <athlets > ================*/
+
 .athlets {
   position:relative;
 }
@@ -601,7 +604,7 @@ h1 span {
   outline: 1px solid grey;
   padding-bottom:110px;
   padding-top:116px;
-  
+
 }
 
 
