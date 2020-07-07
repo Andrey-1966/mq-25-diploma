@@ -5,12 +5,12 @@ body {
 }
 
 h1,h2,h3, h4 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 .header{
@@ -74,7 +74,7 @@ h1,h2,h3, h4 {
 }
 
 h1 span {
-display: block;
+  display: block;
 }
 
 .header-footer {
@@ -113,14 +113,14 @@ display: block;
  font-weight:700;
 }
 
- .athlets-info:nth-child(2) {
+.athlets-info:nth-child(2) {
   background-color: #f5f4f9;
-  }
+}
 
 .athlets-info:nth-child(3) {
   background-color: #5e42b0;
   color:#fff; 
- }
+}
 
 .athlets-info-title {
   display:flex;
@@ -132,16 +132,16 @@ display: block;
   color:#000;
 }
 
- .athlets-info-number::after {
-   content: "";
-   display:block;
-   background-color: #5e42b0;
-   height:4px;
-   }
- 
- .athlets-info:nth-child(3) .athlets-info-number::after {
-   background-color: #fff;
-   }
+.athlets-info-number::after {
+ content: "";
+ display:block;
+ background-color: #5e42b0;
+ height:4px;
+}
+
+.athlets-info:nth-child(3) .athlets-info-number::after {
+ background-color: #fff;
+}
 
 .athlets-info-text {
   text-transform: uppercase;
@@ -162,14 +162,14 @@ display: block;
  font-weight:700;
 }
 
- .players-info:nth-child(2) {
+.players-info:nth-child(2) {
   background-color: #f5f4f9;
-  }
+}
 
 .players-info:nth-child(3) {
   background-color: #5e42b0;
   color:#fff; 
- }
+}
 
 .players-info-title {
   display:flex;
@@ -181,16 +181,16 @@ display: block;
   color:#000;
 }
 
- .players-info-number::after {
-   content: "";
-   display:block;
-   background-color: #5e42b0;
-   height:4px;
-   }
- 
- .players-info:nth-child(3) .athlets-info-number::after {
-   background-color: #fff;
-   }
+.players-info-number::after {
+ content: "";
+ display:block;
+ background-color: #5e42b0;
+ height:4px;
+}
+
+.players-info:nth-child(3) .athlets-info-number::after {
+ background-color: #fff;
+}
 
 .players-info-text {
   text-transform: uppercase;
@@ -205,21 +205,21 @@ display: block;
 
 /*Оптимальная загрузка шапки*/
 @media (max-width:1023px) {
-   .header {
-    background-image: url("../images/football_767.jpg");
-  }
+ .header {
+  background-image: url("../images/football_767.jpg");
+}
 }
 
 @media (min-width:1024px) and (max-width:1600px)  {
-   .header {
-    background-image: url("../images/football_1280.jpg");
-  }
+ .header {
+  background-image: url("../images/football_1280.jpg");
+}
 }
 
 @media (min-width:1601px) {
-   .header {
-    background-image: url("../images/football_1920.jpg");
-  }
+ .header {
+  background-image: url("../images/football_1920.jpg");
+}
 }
 
 /* @media (max-width:640px)    1  ============*/
@@ -237,61 +237,61 @@ display: block;
 
   h1 span {
     margin-left:15.71%;
-}
+  }
   .header-footer {
     margin-top:90px;
     padding-bottom: 84px;
   }
 
-.header-btn {
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left:29.28%;
+  .header-btn {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:29.28%;
+  }
+
+  .header-btn:nth-child(2) {
+    margin-top:14px;
+  }
+
+  .icon-google {
+   width:6.79%;
  }
 
-.header-btn:nth-child(2) {
-margin-top:14px;
-}
-
-.icon-google {
- width:6.79%;
- }
-
-.google_text {
+ .google_text {
   font-size:.5rem;
   margin-left:3.2%;
- }
+}
 
- /* Блок athlets ====№ 1 ===== 2 секция =========================*/
+/* Блок athlets ====№ 1 ===== 2 секция =========================*/
 
- .athlets-title {
+.athlets-title {
   font-size:3.125rem;
   margin-left:5.55%;
-  }
+}
 
 .athlets-picture {
   display:block;
   margin-top:20px;
   text-align:center;
- }
+}
 
 
- .athlets-info {
+.athlets-info {
   padding-top:60px;
   padding-bottom:55px;
   padding-left:5.55%;
- }
- .athlets-info:nth-child(1) {
+}
+.athlets-info:nth-child(1) {
   padding-top:29px;
- }
+}
 
 
- .athlets-info-number {
-   font-size: 0.875rem;
-   width:17px;
- }
+.athlets-info-number {
+ font-size: 0.875rem;
+ width:17px;
+}
 
- .athlets-info-text{
+.athlets-info-text{
   font-size: 1.4375rem;
   color:#c1c1c1;
   margin-left:2.857%;
@@ -305,34 +305,34 @@ margin-top:14px;
 
 /* Блок players ====№ 1 ===== 3 секция =========================*/
 
- .players-title {
+.players-title {
   font-size:3.125rem;
   margin-left:5.55%;
-  }
+}
 
 .players-picture {
   display:block;
   margin-top:20px;
   text-align:center;
- }
+}
 
 
- .players-info {
+.players-info {
   padding-top:60px;
   padding-bottom:55px;
   padding-left:5.55%;
- }
- .players-info:nth-child(1) {
+}
+.players-info:nth-child(1) {
   padding-top:29px;
- }
+}
 
 
- .players-info-number {
-   font-size: 0.875rem;
-   width:17px;
- }
+.players-info-number {
+ font-size: 0.875rem;
+ width:17px;
+}
 
- .players-info-text{
+.players-info-text{
   font-size: 1.4375rem;
   color:#c1c1c1;
   margin-left:2.857%;
@@ -351,8 +351,8 @@ margin-top:14px;
   .container {
   	box-sizing:border-box;
     width:97.66%;
-  	padding-left:3%;
-  	padding-right:3%;
+    padding-left:3%;
+    padding-right:3%;
     padding-top:40px;
     padding-bottom: 91px;
   }
@@ -369,7 +369,7 @@ margin-top:14px;
 
   h1 span {
     margin-left:15%;
-}
+  }
   .header-footer {
     margin-top:313px;
     display:flex;
@@ -377,73 +377,79 @@ margin-top:14px;
     align-items: baseline;
   }
 
-.header-btn {
-  padding-top:25px;
-  padding-bottom:25px;
-  padding-left:5.47%;
-  width:41.47%;
-  box-sizing: border-box;
-  outline:1px solid red;
+  .header-btn {
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:5.47%;
+    width:41.47%;
+    box-sizing: border-box;
+    outline:1px solid red;
+  }
+
+  .header-btn:nth-child(2) {
+    margin-left:4%;
+  }
+  
+  .icon-google {
+   width:11.58%;
  }
 
-.header-btn:nth-child(2) {
-margin-left:4%;
-}
- 
- .icon-google {
- width:11.58%;
- }
-
-.google_text {
+ .google_text {
   font-size:.875rem;
   margin-left:8.68%;
- }
+}
 
- /* Блок athlets ===№ 2 ====== 2 секция =========================*/
- .athlets {
+/* Блок athlets ===№ 2 ====== 2 секция =========================*/
+.athlets {
   position:relative;
- }
- 
+}
 
-  .athlets-picture {
-    display:block;
-    position:absolute;
-    top:116px;
-    left:-150px;
-    }
 
- .athlets-title {
+.athlets-picture {
+  display:block;
+  position:absolute;
+  top:116px;
+  left:-150px;
+}
+
+.athlets-title {
   box-sizing: border-box;
-  padding-top:46px;
   font-size:5rem;
   padding-left:38%;
   outline: 1px solid grey;
+  /* Разукрасил немного блок для наглядности. Потом уберу*/
   background-color:#f9f5f6;
+  /*
   padding-bottom:60px;
- }
- 
+  padding-top:46px;
+  */
+  padding:0;
+  margin:0;
+  /*А вертикальные отступы все равно есть. Откуда они?*/
+}
 
- .athlets-info {
+
+.athlets-info {
  box-sizing: border-box;
-  padding-top:42px;
-  padding-bottom:38px;
-  padding-left:38%;
-  padding-right:32px;
-  outline:1px solid grey;
- }
- 
-  .athlets-info:nth-child(1) {
+ padding-top:42px;
+ padding-bottom:38px;
+ padding-left:38%;
+ padding-right:32px;
+ outline:1px solid grey;
+}
+
+.athlets-info:nth-child(1) {
   padding-top:0;
-  }
+}
 
-  .athlets-info-number {
-   font-size: 14px;
-   width:20px;
-   vertical-align: middle;
-   outline:1px solid grey;
- }
+.athlets-info-number {
+ font-size: 14px;
+ width:20px;
+ vertical-align: middle;
+ outline:1px solid grey;
+}
 
- .athlets-info-text{
+.athlets-info-text{
   font-size: 2rem;
   color:#c1c1c1;
   margin-left:10px;
@@ -457,19 +463,19 @@ margin-left:4%;
 }
 
 /* Блок players ===№ 2 ====== 3 секция =========================*/
- .players {
+.players {
   position:relative;
- }
- 
+}
 
-  .players-picture {
-    display:block;
-    position:absolute;
-    top:65px;
-    left:333px;
-    }
 
- .players-title {
+.players-picture {
+  display:block;
+  position:absolute;
+  top:65px;
+  left:333px;
+}
+
+.players-title {
   box-sizing: border-box;
   padding-top:46px;
   font-size:5rem;
@@ -477,30 +483,30 @@ margin-left:4%;
   outline: 1px solid grey;
   background-color:#f9f5f6;
   padding-bottom:60px;
- }
- 
+}
 
- .players-info {
+
+.players-info {
  box-sizing: border-box;
-  padding-top:42px;
-  padding-bottom:38px;
-  padding-left:35px;
-  padding-right:45.9%;
-  outline:1px solid grey;
- }
- 
-  .players-info:nth-child(1) {
+ padding-top:42px;
+ padding-bottom:38px;
+ padding-left:35px;
+ padding-right:45.9%;
+ outline:1px solid grey;
+}
+
+.players-info:nth-child(1) {
   padding-top:0;
-  }
+}
 
-  .players-info-number {
-   font-size: 14px;
-   width:20px;
-   vertical-align: middle;
-   outline:1px solid grey;
- }
+.players-info-number {
+ font-size: 14px;
+ width:20px;
+ vertical-align: middle;
+ outline:1px solid grey;
+}
 
- .players-info-text{
+.players-info-text{
   font-size: 2rem;
   color:#c1c1c1;
   margin-left:10px;
@@ -538,7 +544,7 @@ margin-left:4%;
 
   h1 span {
     margin-left:28.846%;
-}
+  }
   .header-footer {
     margin-top:223px;
     display:flex;
@@ -546,76 +552,78 @@ margin-left:4%;
     align-items: baseline;
   }
 
-.header-btn {
-  padding-top:25px;
-  padding-bottom:24px;
-  padding-left:2.5%;
-  width:19.936%;
-  box-sizing: border-box;
-  outline:1px solid red;
+  .header-btn {
+    padding-top:25px;
+    padding-bottom:24px;
+    padding-left:2.5%;
+    width:19.936%;
+    box-sizing: border-box;
+    outline:1px solid red;
+  }
+
+  .header-btn:nth-child(2) {
+    margin-left:3.2%;
+  }
+  
+  .icon-google {
+   width:12.86%;
  }
 
-.header-btn:nth-child(2) {
-margin-left:3.2%;
-}
- 
- .icon-google {
- width:12.86%;
- }
-
-.google_text {
+ .google_text {
   font-size:0.875rem;
   margin-left:8.039%;
- }
+}
 
- /* Блок athlets ====№ 3 ===== 2 секция =========================*/
- .athlets {
+/* Блок athlets ====№ 3 ===== 2 секция =========================*/
+.athlets {
   position:relative;
- }
- 
+}
 
-  .athlets-picture {
-    display:block;
-    width:28.9%;
-    position:absolute;
-    position:center center;
-    top:116px;
-    bottom:0;
-    left:20.52%;
-    }
- 
- .athlets-img {
+
+.athlets-picture {
+  display:block;
+  width:28.9%;
+  position:absolute;
+  position:center center;
+  top:116px;
+  bottom:0;
+  left:20.52%;
+}
+
+.athlets-img {
   width:100%;
- }
- .athlets-title {
+}
+.athlets-title {
   box-sizing: border-box;
-  padding-top:116px;
+  
   font-size:5rem;
   padding-left:52.4%;
   outline: 1px solid grey;
   padding-bottom:110px;
- }
- 
+  padding-top:116px;
+  
+}
 
- .athlets-info {
+
+.athlets-info {
  box-sizing: border-box;
-  padding-top:57px;
-  padding-bottom:58px;
-  padding-left:51.4%;
-  padding-right:10.21%;
-  outline:1px solid grey;
- }
-  .athlets-info:nth-child(1) {
+ padding-top:57px;
+ padding-bottom:58px;
+ padding-left:51.4%;
+ padding-right:10.21%;
+ outline:1px solid grey;
+}
+.athlets-info:nth-child(1) {
   padding-top:0;
-  }
+}
 
-  .athlets-info-number {
-   font-size: 1.125rem;
-   width:20px;
-   outline:1px solid grey;
- }
+.athlets-info-number {
+ font-size: 1.125rem;
+ width:20px;
+ outline:1px solid grey;
+}
 
- .athlets-info-text{
+.athlets-info-text{
   font-size: 2.25rem;
   color:#c1c1c1;
   margin-left:10px;
