@@ -105,7 +105,7 @@ display: block;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Секция athlets*/
+/* ======= Секция 1 athlets ===============*/
 .athlets-title {
  color:#e7e7e7;
  text-transform: uppercase;
@@ -150,6 +150,55 @@ display: block;
 }
 
 .athlets-info-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+}
+
+/* ======= Секция 3  players ===============*/
+.players-title {
+ color:#e7e7e7;
+ text-transform: uppercase;
+ font-family: 'Open Sans', sans-serif;
+ font-weight:700;
+}
+
+ .players-info:nth-child(2) {
+  background-color: #f5f4f9;
+  }
+
+.players-info:nth-child(3) {
+  background-color: #5e42b0;
+  color:#fff; 
+ }
+
+.players-info-title {
+  display:flex;
+}
+
+.players-info-number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  color:#000;
+}
+
+ .players-info-number::after {
+   content: "";
+   display:block;
+   background-color: #5e42b0;
+   height:4px;
+   }
+ 
+ .players-info:nth-child(3) .athlets-info-number::after {
+   background-color: #fff;
+   }
+
+.players-info-text {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+}
+
+.players-info-content {
   font-family: 'Open Sans', sans-serif;
   font-weight:700;
 }
@@ -254,6 +303,47 @@ margin-top:14px;
 
 }
 
+/* Блок players ====№ 1 ===== 3 секция =========================*/
+
+ .players-title {
+  font-size:3.125rem;
+  margin-left:5.55%;
+  }
+
+.players-picture {
+  display:block;
+  margin-top:20px;
+  text-align:center;
+ }
+
+
+ .players-info {
+  padding-top:60px;
+  padding-bottom:55px;
+  padding-left:5.55%;
+ }
+ .players-info:nth-child(1) {
+  padding-top:29px;
+ }
+
+
+ .players-info-number {
+   font-size: 0.875rem;
+   width:17px;
+ }
+
+ .players-info-text{
+  font-size: 1.4375rem;
+  color:#c1c1c1;
+  margin-left:2.857%;
+}
+
+.players-info-content {
+  margin-top:27px;
+  font-size:0.9375rem;
+
+}
+
 }
 /*  min-width:641px) and (max-width:960px   2  =======*/
 @media (min-width:641px) and (max-width:960px) {
@@ -318,43 +408,46 @@ margin-left:4%;
   .athlets-picture {
     display:block;
     position:absolute;
-    top:90px;
-    left:-200px;
+    top:116px;
+    left:-150px;
     }
 
  .athlets-title {
-  padding:0;
-  margin:0;
-  padding-top:45px;
+  box-sizing: border-box;
+  padding-top:46px;
   font-size:5rem;
   padding-left:38%;
-  outline: 1px solid red;
+  outline: 1px solid grey;
+  background-color:#f9f5f6;
+  padding-bottom:60px;
  }
  
 
  .athlets-info {
+ box-sizing: border-box;
   padding-top:42px;
   padding-bottom:38px;
   padding-left:38%;
-  outline:1px solid yellow;
+  padding-right:32px;
+  outline:1px solid grey;
  }
  
- .athlets-info:nth-child(1) {
-   padding-top:60px;
- }
+  .athlets-info:nth-child(1) {
+  padding-top:0;
+  }
 
- .athlets-info-number {
+  .athlets-info-number {
    font-size: 14px;
    width:20px;
    vertical-align: middle;
-   outline:1px solid green;
+   outline:1px solid grey;
  }
 
  .athlets-info-text{
   font-size: 2rem;
   color:#c1c1c1;
   margin-left:10px;
-  outline:1px solid green;
+  outline:1px solid grey;
 }
 
 .athlets-info-content {
@@ -362,6 +455,64 @@ margin-left:4%;
   font-size:1rem;
 
 }
+
+/* Блок players ===№ 2 ====== 3 секция =========================*/
+ .players {
+  position:relative;
+ }
+ 
+
+  .players-picture {
+    display:block;
+    position:absolute;
+    top:65px;
+    left:333px;
+    }
+
+ .players-title {
+  box-sizing: border-box;
+  padding-top:46px;
+  font-size:5rem;
+  padding-left:35px;
+  outline: 1px solid grey;
+  background-color:#f9f5f6;
+  padding-bottom:60px;
+ }
+ 
+
+ .players-info {
+ box-sizing: border-box;
+  padding-top:42px;
+  padding-bottom:38px;
+  padding-left:35px;
+  padding-right:45.9%;
+  outline:1px solid grey;
+ }
+ 
+  .players-info:nth-child(1) {
+  padding-top:0;
+  }
+
+  .players-info-number {
+   font-size: 14px;
+   width:20px;
+   vertical-align: middle;
+   outline:1px solid grey;
+ }
+
+ .players-info-text{
+  font-size: 2rem;
+  color:#c1c1c1;
+  margin-left:10px;
+  outline:1px solid grey;
+}
+
+.players-info-content {
+  margin-top:30px;
+  font-size:1rem;
+
+}
+
 
 }
 /* (min-width:961px) and (max-width:1920px)   3    ================*/
@@ -418,8 +569,63 @@ margin-left:3.2%;
  }
 
  /* Блок athlets ====№ 3 ===== 2 секция =========================*/
- .athlets-title {
-  font-size:5rem;
+ .athlets {
+  position:relative;
  }
+ 
+
+  .athlets-picture {
+    display:block;
+    width:28.9%;
+    position:absolute;
+    position:center center;
+    top:116px;
+    bottom:0;
+    left:20.52%;
+    }
+ 
+ .athlets-img {
+  width:100%;
+ }
+ .athlets-title {
+  box-sizing: border-box;
+  padding-top:116px;
+  font-size:5rem;
+  padding-left:52.4%;
+  outline: 1px solid grey;
+  padding-bottom:110px;
+ }
+ 
+
+ .athlets-info {
+ box-sizing: border-box;
+  padding-top:57px;
+  padding-bottom:58px;
+  padding-left:51.4%;
+  padding-right:10.21%;
+  outline:1px solid grey;
+ }
+  .athlets-info:nth-child(1) {
+  padding-top:0;
+  }
+
+  .athlets-info-number {
+   font-size: 1.125rem;
+   width:20px;
+   outline:1px solid grey;
+ }
+
+ .athlets-info-text{
+  font-size: 2.25rem;
+  color:#c1c1c1;
+  margin-left:10px;
+  outline:1px solid grey;
+}
+
+.athlets-info-content {
+  margin-top:30px;
+  font-size:1.25rem;
+
+}
 
 }
