@@ -176,11 +176,8 @@ display: block;
 /* @media (max-width:640px)    1  ============*/
 @media (max-width:640px) {
  
-  .container {
-  	width:87.5%;
-    padding-top:33px;
-   
-  }
+
+  
   .logo {
     width:47.14%;
   }
@@ -220,6 +217,7 @@ margin-top:14px;
 
  .athlets-title {
   font-size:3.125rem;
+  margin-left:5.55%;
   }
 
 .athlets-picture {
@@ -232,6 +230,7 @@ margin-top:14px;
  .athlets-info {
   padding-top:60px;
   padding-bottom:55px;
+  padding-left:5.55%;
  }
  .athlets-info:nth-child(1) {
   padding-top:29px;
@@ -267,6 +266,7 @@ margin-top:14px;
     padding-top:40px;
     padding-bottom: 91px;
   }
+
   .logo {
   	width:27%;
   }
@@ -314,6 +314,7 @@ margin-left:4%;
   position:relative;
  }
  
+
   .athlets-picture {
     display:block;
     position:absolute;
