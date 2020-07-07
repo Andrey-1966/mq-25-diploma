@@ -113,7 +113,7 @@ display: block;
  font-weight:700;
 }
 
-.athlets-info:nth-child(2) {
+ .athlets-info:nth-child(2) {
   background-color: #f5f4f9;
   }
 
@@ -173,7 +173,7 @@ display: block;
   }
 }
 
-/* Стили по заданию */
+/* @media (max-width:640px)    1  ============*/
 @media (max-width:640px) {
  
   .container {
@@ -216,16 +216,16 @@ margin-top:14px;
   margin-left:3.2%;
  }
 
- /* Блок */
-.athlets-wrapper {
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
- }
+ /* Блок athlets ====№ 1 ===== 2 секция =========================*/
 
  .athlets-title {
   font-size:3.125rem;
-  order:-1;
+  }
+
+.athlets-picture {
+  display:block;
+  margin-top:20px;
+  text-align:center;
  }
 
 
@@ -237,13 +237,10 @@ margin-top:14px;
   padding-top:29px;
  }
 
-.athlets-info:nth-child(3) {
-  
- }
 
  .athlets-info-number {
    font-size: 0.875rem;
-   width:6.07%;
+   width:17px;
  }
 
  .athlets-info-text{
@@ -259,7 +256,7 @@ margin-top:14px;
 }
 
 }
-
+/*  min-width:641px) and (max-width:960px   2  =======*/
 @media (min-width:641px) and (max-width:960px) {
   
   .container {
@@ -312,46 +309,51 @@ margin-left:4%;
   margin-left:8.68%;
  }
 
- /* Блок athlets*/
- 
-.athlets-wrapper {
-    position:relative;
+ /* Блок athlets ===№ 2 ====== 2 секция =========================*/
+ .athlets {
+  position:relative;
  }
  
   .athlets-picture {
+    display:block;
     position:absolute;
+    top:90px;
     left:-200px;
-    top:0;
-    opacity:1;
-  }
+    }
 
  .athlets-title {
+  padding:0;
+  margin:0;
+  padding-top:45px;
   font-size:5rem;
-  padding-left:37.73%;
+  padding-left:38%;
+  outline: 1px solid red;
  }
  
- .athlets-text {
-    margin-top:60px;
-    padding-left:37.73%;
- } 
 
  .athlets-info {
   padding-top:42px;
   padding-bottom:38px;
+  padding-left:38%;
+  outline:1px solid yellow;
  }
+ 
  .athlets-info:nth-child(1) {
-  padding-top:0;
+   padding-top:60px;
  }
 
  .athlets-info-number {
-   font-size: 1.125rem;
-   width:2.796%;
+   font-size: 14px;
+   width:20px;
+   vertical-align: middle;
+   outline:1px solid green;
  }
 
  .athlets-info-text{
   font-size: 2rem;
   color:#c1c1c1;
-  margin-left:1.067%;
+  margin-left:10px;
+  outline:1px solid green;
 }
 
 .athlets-info-content {
@@ -361,7 +363,7 @@ margin-left:4%;
 }
 
 }
-
+/* (min-width:961px) and (max-width:1920px)   3    ================*/
 @media (min-width:961px) and (max-width:1920px) {
   
   .container {
@@ -414,7 +416,7 @@ margin-left:3.2%;
   margin-left:8.039%;
  }
 
- /* Блок athlets*/
+ /* Блок athlets ====№ 3 ===== 2 секция =========================*/
  .athlets-title {
   font-size:5rem;
  }
