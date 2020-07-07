@@ -39,7 +39,7 @@ h1,h2,h3, h4 {
   z-index: 1; 
   margin-left:auto;
   margin-right:auto;
-  outline:1px solid red;
+  outline:1px solid grey;
 
 }
 
@@ -97,10 +97,61 @@ display: block;
 
 .google_text {
   display:box;
+  align-items:baseline;
   color:#fff;
   text-transform:uppercase;
   outline:1px solid grey;
   text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Секция athlets*/
+.athlets-title {
+ color:#e7e7e7;
+ text-transform: uppercase;
+ font-family: 'Open Sans', sans-serif;
+ font-weight:700;
+}
+
+.athlets-info:nth-child(2) {
+  background-color: #f5f4f9;
+  }
+
+.athlets-info:nth-child(3) {
+  background-color: #5e42b0;
+  color:#fff; 
+ }
+
+.athlets-info-title {
+  display:flex;
+}
+
+.athlets-info-number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  color:#000;
+}
+
+ .athlets-info-number::after {
+   content: "";
+   display:block;
+   background-color: #5e42b0;
+   height:4px;
+   }
+ 
+ .athlets-info:nth-child(3) .athlets-info-number::after {
+   background-color: #fff;
+   }
+
+.athlets-info-text {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+}
+
+.athlets-info-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
 }
 
 /*Оптимальная загрузка шапки*/
@@ -128,7 +179,7 @@ display: block;
   .container {
   	width:87.5%;
     padding-top:33px;
-    padding-bottom: 84px;
+   
   }
   .logo {
     width:47.14%;
@@ -143,6 +194,7 @@ display: block;
 }
   .header-footer {
     margin-top:90px;
+    padding-bottom: 84px;
   }
 
 .header-btn {
@@ -163,6 +215,49 @@ margin-top:14px;
   font-size:.5rem;
   margin-left:3.2%;
  }
+
+ /* Блок */
+.athlets-wrapper {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+ }
+
+ .athlets-title {
+  font-size:3.125rem;
+  order:-1;
+ }
+
+
+ .athlets-info {
+  padding-top:60px;
+  padding-bottom:55px;
+ }
+ .athlets-info:nth-child(1) {
+  padding-top:29px;
+ }
+
+.athlets-info:nth-child(3) {
+  
+ }
+
+ .athlets-info-number {
+   font-size: 0.875rem;
+   width:6.07%;
+ }
+
+ .athlets-info-text{
+  font-size: 1.4375rem;
+  color:#c1c1c1;
+  margin-left:2.857%;
+}
+
+.athlets-info-content {
+  margin-top:27px;
+  font-size:0.9375rem;
+
+}
+
 }
 
 @media (min-width:641px) and (max-width:960px) {
@@ -216,6 +311,55 @@ margin-left:4%;
   font-size:.875rem;
   margin-left:8.68%;
  }
+
+ /* Блок athlets*/
+ 
+.athlets-wrapper {
+    position:relative;
+ }
+ 
+  .athlets-picture {
+    position:absolute;
+    left:-200px;
+    top:0;
+    opacity:1;
+  }
+
+ .athlets-title {
+  font-size:5rem;
+  padding-left:37.73%;
+ }
+ 
+ .athlets-text {
+    margin-top:60px;
+    padding-left:37.73%;
+ } 
+
+ .athlets-info {
+  padding-top:42px;
+  padding-bottom:38px;
+ }
+ .athlets-info:nth-child(1) {
+  padding-top:0;
+ }
+
+ .athlets-info-number {
+   font-size: 1.125rem;
+   width:2.796%;
+ }
+
+ .athlets-info-text{
+  font-size: 2rem;
+  color:#c1c1c1;
+  margin-left:1.067%;
+}
+
+.athlets-info-content {
+  margin-top:30px;
+  font-size:1rem;
+
+}
+
 }
 
 @media (min-width:961px) and (max-width:1920px) {
@@ -269,4 +413,10 @@ margin-left:3.2%;
   font-size:0.875rem;
   margin-left:8.039%;
  }
+
+ /* Блок athlets*/
+ .athlets-title {
+  font-size:5rem;
+ }
+
 }
