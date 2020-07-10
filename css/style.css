@@ -40,14 +40,13 @@ h1,h2,h3, h4 {
   margin-left:auto;
   margin-right:auto;
   outline:1px solid grey;
-
 }
 
 .header{
   position: relative;
 }
 
-.logo {
+.logo, .logo-d {
   outline:1px solid grey;
   text-align:center;
   margin-left:auto;
@@ -73,7 +72,7 @@ h1,h2,h3, h4 {
   text-transform:uppercase;
 }
 
-h1 span {
+h1 span, h2 span {
   display: block;
 }
 
@@ -104,6 +103,61 @@ h1 span {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
 }
+
+/*  footer */
+
+.footer{
+
+  min-height: 200px; 
+  color: #ffffff; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  outline:1px solid yellow;
+}
+
+.footer::after {
+  content: "";
+  background-color: #15173a;
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer{
+  position: relative;
+}
+
+.logo-f {
+  outline:1px solid grey;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#543aa1;
+}
+
+
+.footer-title {
+  box-sizing: border-box;
+  text-align:left;
+  margin:auto;
+  padding-left:0;
+  outline:1px solid grey;
+}
+
+.header-footer {
+ outline:1px solid green;
+ 
+}
+
+
+
+/*  footer end*/
+
+
 
 /* ======= Секция 1 athlets ===============*/
 .athlets-title {
@@ -167,7 +221,7 @@ h1 span {
 }
 
 .players-info:nth-child(3) {
-  background-color: #5e42b0;
+  background-color: #090c35;
   color:#fff; 
 }
 
@@ -188,8 +242,12 @@ h1 span {
  height:4px;
 }
 
-.players-info:nth-child(3) .athlets-info-number::after {
+.players-info:nth-child(3) .players-info-number::after {
  background-color: #fff;
+ color:#8060d3;
+}
+.players-info:nth-child(3) .players-info-number {
+  color:#8060d3;
 }
 
 .players-info-text {
@@ -203,10 +261,25 @@ h1 span {
   font-weight:700;
 }
 
+.be-title {
+  font-family: 'Open Sans', sans-serif;                                        
+  font-weight:700;
+  text-transform:uppercase;
+  color:#e7e7e7;
+}
+.be-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+}
+}
 /*Оптимальная загрузка шапки*/
+
 @media (max-width:1023px) {
  .header {
   background-image: url("../images/football_767.jpg");
+}
+.footer {
+  background-image: url("../images/game_767.jpg");
 }
 }
 
@@ -214,19 +287,28 @@ h1 span {
  .header {
   background-image: url("../images/football_1280.jpg");
 }
+.footer {
+  background-image: url("../images/game_1280.jpg");
+}
 }
 
 @media (min-width:1601px) {
  .header {
   background-image: url("../images/football_1920.jpg");
 }
+.footer {
+  background-image: url("../images/game_1920.jpg");
+}
 }
 
-/* @media (max-width:640px) № 1  <header>  ============*/
+/* ==================@media (max-width:640px) № 1  <header>  ============*/
 @media (max-width:640px) {
 
-
-
+  /* header */
+  .container {
+    padding-left:20px;
+    padding-right:20px;
+  }
   .logo {
     width:47.14%;
   }
@@ -236,7 +318,7 @@ h1 span {
   }
 
   h1 span {
-    margin-left:15.71%;
+    margin-left:15.71%; 
   }
   .header-footer {
     margin-top:90px;
@@ -262,6 +344,40 @@ h1 span {
   margin-left:3.2%;
 }
 
+/* ====@media (max-width:640px)=======footer=======================*/
+.string {
+  padding-top:100px;
+  
+}
+.logo-f {
+  width:21.875%;
+  border-radius:20%;
+  padding: 13px 8px;
+
+}
+
+
+.footer-title {
+ margin-top:100px;
+ font-size: 2rem;
+ text-align:center;
+}
+h2 span {
+  color:#7c74a3;
+  font-size:0.875rem;
+}
+
+
+.footer-footer {
+  margin-top:77px;
+  
+}
+
+.logo-d {
+  padding-top: 84px;
+  width:47.14%;
+  padding-bottom:10px;
+}
 /* @media (max-width:640px) № 2 <athlets>  ============*/
 
 .athlets-title {
@@ -322,6 +438,7 @@ h1 span {
   padding-bottom:55px;
   padding-left:5.55%;
 }
+
 .players-info:nth-child(1) {
   padding-top:29px;
 }
@@ -344,6 +461,55 @@ h1 span {
 
 }
 
+/* @media (max-width:640px) № 3 <be-active>  ============*/
+.be-pict {
+  outline:2px solid green;
+  position:relative;
+}
+
+
+.img_be {
+  width:100%;
+}
+
+.be-numbers {
+  position:absolute;
+  z-index:1;
+  background-color: #5e42b0;
+  height:70px;
+  width:70px;
+  bottom:-10px;
+  left:30px;
+  display: grid;
+  place-items: center;
+
+}
+.be-number {
+  color:#fff;
+  font-size:0.875rem;
+}
+.be-number::after {
+ content: "";
+ display:block;
+ background-color: #8f7bc8;
+ height:4px;
+}
+
+.be-text {
+ margin-top:32px;
+ padding-right:6.25%;
+ padding-bottom:66px;
+ padding-left:6.25%;
+}
+
+.be-title {
+  font-size: 1.75rem;
+}
+
+.be-content {
+  font-size:1rem;
+  margin-top:25px;
+}
 }
 /*  min-width:641px) and (max-width:960px )  <header> =======*/
 @media (min-width:641px) and (max-width:960px) {
@@ -354,7 +520,7 @@ h1 span {
     padding-left:3%;
     padding-right:3%;
     padding-top:40px;
-    padding-bottom: 91px;
+    
   }
 
   .logo {
@@ -370,11 +536,13 @@ h1 span {
   h1 span {
     margin-left:15%;
   }
-  .header-footer {
+  
+  .header-footer, .footer-footer {
     margin-top:313px;
     display:flex;
     justify-content:center;
     align-items: baseline;
+    padding-bottom: 91px;
   }
 
   .header-btn {
@@ -399,10 +567,46 @@ h1 span {
   margin-left:8.68%;
 }
 
+/* ====min-width:641px) and (max-width:960px ) =======footer=======================*/
+.string {
+  margin-top:126px;
+  
+}
+.logo-f {
+  width:16.67%;
+  border-radius:20%;
+  padding: 24px 11px;
+}
+
+
+.footer-title {
+ margin-top:83px;
+ font-size: 5rem;
+ text-align:center;
+}
+h2 span {
+  color:#7c74a3;
+  font-size:2.25rem;
+}
+
+
+.footer-footer {
+  margin-top:286px;
+  padding-bottom: 0px;
+}
+
+.logo-d {
+  padding-top: 53px;
+  width:27%;
+  padding-bottom:23px;
+}
+
+
 /*  min-width:641px) and (max-width:960px )  <athlets> =======*/
 
 .athlets {
   position:relative;
+  padding-top:46px;
 }
 
 
@@ -418,15 +622,7 @@ h1 span {
   font-size:5rem;
   padding-left:38%;
   outline: 1px solid grey;
-  /* Разукрасил немного блок для наглядности. Потом уберу*/
-  background-color:#f9f5f6;
-  /*
   padding-bottom:60px;
-  padding-top:46px;
-  */
-  padding:0;
-  margin:0;
-  /*А вертикальные отступы все равно есть. Откуда они? */
 }
 
 
@@ -467,6 +663,7 @@ h1 span {
 
 .players {
   position:relative;
+  padding-top:46px;
 }
 
 
@@ -474,16 +671,19 @@ h1 span {
   display:block;
   position:absolute;
   top:65px;
-  left:333px;
+  left:43.49%;
+}
+
+.img_player {
+  width:100%;
 }
 
 .players-title {
   box-sizing: border-box;
-  padding-top:46px;
+  
   font-size:5rem;
-  padding-left:35px;
+  padding-left:4.43%;
   outline: 1px solid grey;
-  background-color:#f9f5f6;
   padding-bottom:60px;
 }
 
@@ -492,8 +692,8 @@ h1 span {
  box-sizing: border-box;
  padding-top:42px;
  padding-bottom:38px;
- padding-left:35px;
- padding-right:45.9%;
+ padding-left:4.43%;
+ padding-right:46.22%;
  outline:1px solid grey;
 }
 
@@ -508,7 +708,7 @@ h1 span {
  outline:1px solid grey;
 }
 
-.players-info-text{
+.players-info-text {
   font-size: 2rem;
   color:#c1c1c1;
   margin-left:10px;
@@ -520,8 +720,56 @@ h1 span {
   font-size:1rem;
 
 }
+/*  min-width:641px) and (max-width:960px ) № 3 <be-active>  ============*/
+.be-pict {
+  outline:2px solid green;
+  position:relative;
+}
 
 
+.img_be {
+  width:100%;
+}
+
+.be-numbers {
+  position:absolute;
+  z-index:1;
+  background-color: #5e42b0;
+  height:70px;
+  width:70px;
+  bottom:-10px;
+  left:30px;
+  display: grid;
+  place-items: center;
+
+}
+.be-number {
+  color:#fff;
+  font-size:0.875rem;
+}
+
+.be-number::after {
+ content: "";
+ display:block;
+ background-color: #8f7bc8;
+ height:4px;
+}
+
+.be-text {
+ padding-top:32px;
+ padding-left:30px;
+ padding-bottom:106px;
+}
+
+.be-title {
+  font-size: 1.5625rem;
+  
+}
+
+
+.be-content {
+ margin-top:41px;
+}
 }
 /* (min-width:961px) and (max-width:1920px)   <header> ================*/
 @media (min-width:961px) and (max-width:1920px) {
@@ -532,8 +780,8 @@ h1 span {
     padding-left:.61%;
     padding-right:.77%;
     padding-top:44px;
-    padding-bottom: 110px;
-  }
+    /* padding-bottom: 110px;*/ 
+  }  
   .logo {
     width:12.18%;
   }
@@ -547,11 +795,12 @@ h1 span {
   h1 span {
     margin-left:28.846%;
   }
-  .header-footer {
+  .header-footer, .footer-footer {
     margin-top:223px;
+    padding-bottom:110px;
     display:flex;
     justify-content:center;
-    align-items: baseline;
+    align-items: baseline;  
   }
 
   .header-btn {
@@ -576,10 +825,59 @@ h1 span {
   margin-left:8.039%;
 }
 
+
+
+
+/* ====(min-width:961px) and (max-width:1920px) =======footer=======================*/
+
+.string {
+  margin-top:252px;
+  display:flex;
+  
+  justify-content: center;
+  outline:1px solid red;
+  
+}
+
+.logo-f {
+  width:8.34%;
+  border-radius:20%;
+  padding: 25px 13px;
+  outline:1px solid yellow;
+  
+}
+
+
+.footer-title {
+ font-size: 5rem;
+ outline:1px solid yellow;
+ margin-left:35px;
+}
+h2 span {
+  color:#7c74a3;
+  font-size:1.875rem;
+}
+
+
+.footer-footer {
+  margin-top:161px;
+  padding-bottom:0;
+}
+
+.logo-d {
+  margin-top: 260px;
+  width:12.18%;
+  padding-bottom:10px;
+}
+
+
+
+
 /* (min-width:961px) and (max-width:1920px)   <athlets > ================*/
 
 .athlets {
   position:relative;
+  padding-top:116px;
 }
 
 
@@ -587,7 +885,6 @@ h1 span {
   display:block;
   width:28.9%;
   position:absolute;
-  position:center center;
   top:116px;
   bottom:0;
   left:20.52%;
@@ -603,7 +900,7 @@ h1 span {
   padding-left:52.4%;
   outline: 1px solid grey;
   padding-bottom:110px;
-  padding-top:116px;
+  
 
 }
 
@@ -638,5 +935,163 @@ h1 span {
   font-size:1.25rem;
 
 }
+
+
+/* (min-width:961px) and (max-width:1920px)  <players> ================*/
+
+.players {
+  position:relative;
+  padding-top:118px;
+}
+
+
+.players-picture {
+  display:block;
+  width:51.3%;
+  position:absolute;
+  top:116px;
+  bottom:0;
+  right:6.09%;
+}
+
+.players-img {
+  width:100%;
+}
+
+.players-title {
+  box-sizing: border-box;
+  font-size:5rem;
+  padding-left:10%;
+  outline: 1px solid grey;
+  padding-bottom:107px;
+  
+
+}
+
+
+.players-info {
+ box-sizing: border-box;
+ padding-top:57px;
+ padding-bottom:60px;
+ padding-left:10%;
+ padding-right:50.57%;
+ outline:1px solid red;
+}
+.players-info:nth-child(1) {
+  padding-top:0;
+}
+
+.players-info-number {
+ font-size: 1.125rem;
+ width:20px;
+ outline:1px solid grey;
+}
+
+.players-info-text{
+  font-size: 2.25rem;
+  color:#c1c1c1;
+  margin-left:10px;
+  outline:1px solid grey;
+}
+
+.players-info-content {
+  margin-top:30px;
+  font-size:1.25rem;
+
+}
+
+/*  min-width:961px) and (max-width:1920px ) № 3 СЕКЦИИ 4-6 ============*/
+.be-wrap {
+ display:flex;
+ justify-content:center;
+}
+
+.be-pict {
+  outline:2px solid green;
+  position:relative;
+  width:50%;
+}
+.find-contact .be-pict {
+ order:1;
+} 
+
+.img_be {
+  width:100%;
+}
+       /* "Резиновый" квадрат*/
+.be-numbers {
+ width:18.6%;
+ margin:auto;
+ background-color: #5e42b0;
+ overflow:hidden;
+ top:50%;
+ margin-top:-9.3%;
+ right:-9.3%;
+ position:absolute;
+ z-index:1;
+ text-align: center;
+}
+
+.be-numbers:before {
+ content:"";
+ padding-top:100%;
+ float:left;
+}
+
+
+.find-contact .be-numbers {
+ left:-110%;
+}
+
+   /* Размещение числа в центре и подчеркиваия */ 
+.be-number {
+  box-sizing:border-box;
+  padding-top:25%;
+  padding-bottom:25%;
+  color:#fff;
+  font-size:1.5rem;
+}
+
+.be-number::after {
+ content: "";
+ display:block;
+ background-color: #8f7bc8;
+ height:4px;
+ width:25%;
+ margin-left:35%;
+}
+
+/* Размещение текста слева или справа */
+.be-text {
+ width:38%;
+ padding-top:2%; 
+ margin-left:6%; 
+  display: grid;
+  place-items: center;      /*  РАЗМЕЩАЕМ БЛОК .be-text-wrap С ТЕКСТОМ ПО ЦЕНТРУ */
+}
+.be-text-wrap {
+ outline:1px solid grey;
+
+}
+
+.find-contact  .be-text {
+ width:50%;
+ box-sizing:border-box; 
+ padding-right:3%;
+ padding-left:3%;  
+}
+
+
+.be-title {
+  font-size: 4rem;
+}
+
+
+.be-content {
+  font-size:1.5rem;
+  margin-top:50px;
+}
+
+
 
 }
