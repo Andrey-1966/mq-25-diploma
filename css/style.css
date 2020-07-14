@@ -89,7 +89,7 @@ h1 span, h2 span {
 }
 
 .icon-google {
- display:box;
+ display: block;
  fill:#fff;
  outline:1px solid grey;
 }
@@ -191,6 +191,7 @@ h1 span, h2 span {
  display:block;
  background-color: #5e42b0;
  height:4px;
+ border-radius:20%;
 }
 
 .athlets-info:nth-child(3) .athlets-info-number::after {
@@ -240,6 +241,7 @@ h1 span, h2 span {
  display:block;
  background-color: #5e42b0;
  height:4px;
+ border-radius:20%;
 }
 
 .players-info:nth-child(3) .players-info-number::after {
@@ -308,6 +310,7 @@ h1 span, h2 span {
   .container {
     padding-left:20px;
     padding-right:20px;
+    padding-bottom: 84px;
   }
   .logo {
     width:47.14%;
@@ -322,7 +325,7 @@ h1 span, h2 span {
   }
   .header-footer {
     margin-top:90px;
-    padding-bottom: 84px;
+    
   }
 
   .header-btn {
@@ -493,6 +496,7 @@ h2 span {
  display:block;
  background-color: #8f7bc8;
  height:4px;
+ border-radius:20%;
 }
 
 .be-text {
@@ -520,7 +524,7 @@ h2 span {
     padding-left:3%;
     padding-right:3%;
     padding-top:40px;
-    
+    padding-bottom: 91px;
   }
 
   .logo {
@@ -542,7 +546,7 @@ h2 span {
     display:flex;
     justify-content:center;
     align-items: baseline;
-    padding-bottom: 91px;
+    
   }
 
   .header-btn {
@@ -620,9 +624,9 @@ h2 span {
 .athlets-title {
   box-sizing: border-box;
   font-size:5rem;
-  padding-left:38%;
+  margin-left:38%;
   outline: 1px solid grey;
-  padding-bottom:60px;
+  margin-bottom:60px;
 }
 
 
@@ -753,6 +757,7 @@ h2 span {
  display:block;
  background-color: #8f7bc8;
  height:4px;
+ border-radius:20%;
 }
 
 .be-text {
@@ -780,6 +785,7 @@ h2 span {
     padding-left:.61%;
     padding-right:.77%;
     padding-top:44px;
+    padding-bottom:110px;
     /* padding-bottom: 110px;*/ 
   }  
   .logo {
@@ -797,7 +803,6 @@ h2 span {
   }
   .header-footer, .footer-footer {
     margin-top:223px;
-    padding-bottom:110px;
     display:flex;
     justify-content:center;
     align-items: baseline;  
@@ -833,7 +838,9 @@ h2 span {
 .string {
   margin-top:252px;
   display:flex;
-  
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
   justify-content: center;
   outline:1px solid red;
   
@@ -897,9 +904,9 @@ h2 span {
   box-sizing: border-box;
   
   font-size:5rem;
-  padding-left:52.4%;
+  margin-left:52.4%;
   outline: 1px solid grey;
-  padding-bottom:110px;
+  margin-bottom:110px;
   
 
 }
@@ -1017,8 +1024,12 @@ h2 span {
 
 .img_be {
   width:100%;
+  display:block;
 }
        /* "Резиновый" квадрат*/
+       
+       
+       
 .be-numbers {
  width:18.6%;
  margin:auto;
@@ -1030,6 +1041,9 @@ h2 span {
  position:absolute;
  z-index:1;
  text-align: center;
+ display: flex; 
+ justify-content: center; 
+ align-items: center;
 }
 
 .be-numbers:before {
@@ -1059,19 +1073,22 @@ h2 span {
  height:4px;
  width:25%;
  margin-left:35%;
+ border-radius:20%;
 }
 
 /* Размещение текста слева или справа */
 .be-text {
- width:38%;
+ width:50%;
  padding-top:2%; 
- margin-left:6%; 
-  display: grid;
-  place-items: center;      /*  РАЗМЕЩАЕМ БЛОК .be-text-wrap С ТЕКСТОМ ПО ЦЕНТРУ */
+
+  display: flex;
+  align-items: center;      /*  РАЗМЕЩАЕМ БЛОК .be-text-wrap С ТЕКСТОМ ПО ЦЕНТРУ */
+  Justify-content: center; 
 }
 .be-text-wrap {
  outline:1px solid grey;
-
+  width:90%;
+   margin-left:12%; 
 }
 
 .find-contact  .be-text {
@@ -1081,6 +1098,11 @@ h2 span {
  padding-left:3%;  
 }
 
+
+.find-contact .be-text-wrap {
+  margin-left:0;
+  margin-right:12%;  
+}
 
 .be-title {
   font-size: 4rem;
