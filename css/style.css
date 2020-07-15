@@ -782,7 +782,7 @@ h2 span {
 .be-number {
   color:#fff;
   font-size:0.875rem;
-}
+  }
 
 .be-number::after {
  content: "";
@@ -790,6 +790,7 @@ h2 span {
  background-color: #8f7bc8;
  height:4px;
  border-radius:20%;
+ 
 }
 
 .be-text {
@@ -1114,8 +1115,8 @@ h2 span {
  display:block;
  background-color: #8f7bc8;
  height:4px;
- width:25%;
- margin-left:35%;
+ width:100%;
+ margin-left:0;
  border-radius:20%;
 }
 
